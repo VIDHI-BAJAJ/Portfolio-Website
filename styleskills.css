@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=PT+Serif:ital@1&family=Radio+Canada:wght@700&family=Work+Sans:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    padding: 15px;
+    background-color: whitesmoke;
+    height: 100px;
+    padding-top: 25px;
+}
+nav span{
+    padding-left: 70px;
+    padding-top: 25px;
+    font-size: 25px;
+}
+nav ul{
+     display: flex;
+    text-align: right;
+    list-style: none;
+    float: right;
+}
+li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: black ;
+    padding: 10px;
+    padding-left: 25px;
+    padding-top: 5px;
+    display: inline-block;
+    
+}
+li a:hover{
+    color:burlywood;
+}
+.checkbtn{
+    font-size: 30px;
+    float:right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media screen and (max-width:900px){
+    .checkbtn{
+        display: inline;
+    }
+    #check:checked ~ .checkbtn i:before{
+        content: "\f00d";
+    }
+     nav ul{
+        position:fixed;
+        width:25%;
+        height:100vh;
+        background: #000;
+        left:-100%;
+        display: block;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        line-height:15px;
+        margin: 50px 0 0;
+    }
+    nav ul  li a{
+        color: white;
+        font-size: 20px;
+        margin: 40px 0 0;
+        display: block;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+  }
+.main{
+    padding-top: 20px;
+    background-color:white;
+}
+.main h1{
+    text-align: center;
+    font-size: 45px;
+    padding: 1rem;
+    position: relative;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}
+.skill-title{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    align-items: center;
+}
+.skill-title h3{
+    color: black;
+    margin: 0.5rem;
+}
+.skill-icon{
+    width: 50px;
+}
+.img{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    background-color: thistle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width :500px) {
+     
+   .container{
+       grid-template-columns: repeat(2, 1fr);
+       padding: 2rem 50px;
+   }
+}
+   @media screen and (max-width :440px) {
+    
+      .container{
+          grid-template-columns: 1fr;
+         
+      }
+    }
+    .footer-bottom{
+        background-color: black;
+      padding: 12px 0 ;
+      text-align: center;
+      color: white;
+      }
+      .footer-bottom p{
+      font-size: 14px;
+      word-spacing: 2px;
+      text-transform: capitalize;
+      }
+      .footer-bottom span{
+      text-transform: uppercase;
+      opacity: .4;
+      }
+    

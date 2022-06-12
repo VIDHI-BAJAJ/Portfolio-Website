@@ -1,0 +1,294 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=PT+Serif:ital@1&family=Radio+Canada:wght@700&family=Work+Sans:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    background-color:transparent;
+    height: 100px;
+}
+nav span{
+    padding-left: 70px;
+    padding-top: 25px;
+    font-size: 25px;
+}
+nav ul{
+     display: flex;
+    text-align: right;
+    list-style: none;
+    float: right;
+    overflow: hidden;
+}
+li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: black ;
+    padding: 10px;
+    padding-left: 25px;
+    padding-top: 5px;
+    display: inline-block;
+}
+li a:hover{
+    color:burlywood;
+}
+.checkbtn{
+    font-size: 30px;
+    float:right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media screen and (max-width:900px){
+    .checkbtn{
+        display: inline;
+    }
+    #check:checked ~ .checkbtn i:before{
+        content: "\f00d";
+    }
+     nav ul{
+        position:fixed;
+        width:25%;
+        height:100vh;
+        background: #000;
+        left:-100%;
+        display: block;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        line-height:15px;
+        margin: 50px 0 0;
+    }
+    nav ul  li a{
+        color: white;
+        font-size: 20px;
+        margin: 40px 0 0;
+        display: block;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .aa{
+        font-size: 25px;
+    }
+}
+    
+.main{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    width: 25rem;
+    height: 30rem;
+    background-color: bisque;
+    display: block;
+    animation: myanime 2s;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: myanime;
+}
+@keyframes myanime {
+    from {left: -32em;}
+    to {left: 0px;}
+  }
+
+.namecontainer{
+    margin-left: 250px;
+    margin-top: 20px;
+    font-size: 30px;
+}
+@keyframes myname {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+.aa {
+    position: relative;
+    bottom: 0.5em;
+    width: 75%;
+    height: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding-right: 1.75rem;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: none;
+    padding-right: 2rem;
+    color: black;
+    font-family: 'Karla', sans-serif;
+}
+.container{
+    margin-left: 150px;
+    margin-top: 150px;
+}
+.ms-auto {
+    margin-left: auto!important;
+}
+.me-4 {
+    margin-right: 1.5rem!important;
+}
+.image {
+    position: absolute;
+    top: 14em;
+    right: 0px;
+    width: 20%;
+    animation: myimage 2s;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: myimage;
+}
+@keyframes myimage {
+    from {right: -25em;}
+    to {right: 0px;}
+  }
+    .image ms-auto me-4{
+        position: absolute;
+        top: 30rem;
+        right: 0px;
+        width: 20%;
+        animation: myimage 2s;
+        animation-duration: 2s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: none;
+        animation-play-state: running;
+        animation-name: myimage;
+    }
+
+.footer-bottom{
+      background-color: black;
+    padding: 12px 0 ;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+  }
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+   text-transform: uppercase;
+   opacity: .4;
+}
+@media screen and (max-width:850px){
+    .aa{
+        bottom: 0.5em;
+    width: 75%;
+    height: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding-right: 1.75rem;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: none;
+    padding-right: 2rem;
+    color: black;
+    font-family: 'Karla', sans-serif;
+    }
+    .namecontainer h1{
+        font-size: 40px;
+    }
+}
+@media screen  and (max-width:650px){
+    .main{
+        width: 18rem;
+        height: 20rem;
+    }
+    .image{
+        position: absolute;
+        top: 20em;
+        right: 0px;
+        width: 20%;
+        animation: myimage 2s;
+        animation-duration: 2s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: none;
+        animation-play-state: running;
+        animation-name: myimage;
+    }
+    .aa{
+        bottom: 0.5em;
+    width: 75%;
+    height: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding-right: 1.75rem;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: none;
+    padding-right: 2rem;
+    color: black;
+    font-family: 'Karla', sans-serif;
+    
+}}
+@media screen and (max-width:560px){
+    .aa{
+        bottom: 0.5em;
+    width: 75%;
+    height: auto;
+    
+    margin-bottom: 0.5em;
+    padding-right: 1.75rem;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: none;
+    padding-right: 2rem;
+    color: black;
+    font-family: 'Karla', sans-serif;
+    }
+    .main{
+        width: 15rem;
+        height: 18rem;
+    }
+    .namecontainer{
+        font-size:25px;
+    }
+}
+@media screen and (max-width:550px) {
+    .image{
+        position: absolute;
+        top: 25rem;
+        right: 0px;
+        width: 20%;
+        animation: myimage 2s;
+        animation-duration: 2s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: none;
+        animation-play-state: running;
+        animation-name: myimage;
+    }
+}
