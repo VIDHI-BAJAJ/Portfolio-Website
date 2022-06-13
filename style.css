@@ -370,3 +370,19 @@ li a:hover{
     }
     
 }
+@media screen and (max-width:350px) {
+    nav ul{
+    position:fixed;
+    width:35%;
+    height:100vh;
+    background: #000;
+    left:-100%;
+    display: block;
+    text-align: center;
+    transition: all .5s;
+}
+.namecontainer{
+    text-align: left;
+    font-size:15px;
+}
+}
