@@ -344,3 +344,47 @@ app__footer-cards .app__footer-card a {
    
     
 }
+@media screen and (max-width:450px) {
+    .app__footer-cards {
+           align-items: center;
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: space-evenly;
+           margin: 5px 2rem 2rem;
+           width: 35%;
+           margin-left :9rem;
+           }
+       .app__footer-form {
+           flex-direction: column;
+           margin: 1rem 2rem;
+           width: 35%;
+          margin-left: 12rem;
+       }
+       .app__flex {
+           align-items: center;
+           display: flex;
+           justify-content: center;
+       }
+      
+       
+   }
+@media screen and (max-width:440px) {
+    .app__footer-form button {
+        background-color: #313bac;
+        border: none;
+        border-radius:15px;
+        color: white;
+        cursor: pointer;
+        font-family: "DM Sans",sans-serif;
+        font-weight: 300;
+        margin: 1rem 0 0;
+        outline: none;
+        padding: .5rem 1rem;
+    }
+    .p-text {
+        color: gray;
+        font-size: .4rem;
+        line-height: 1.5;
+        text-align: left;
+    }
+}
