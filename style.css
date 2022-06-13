@@ -370,7 +370,7 @@ li a:hover{
     }
     
 }
-@media screen and (max-width:350px) {
+@media screen and (max-width:300px) {
     nav ul{
     position:fixed;
     width:35%;
