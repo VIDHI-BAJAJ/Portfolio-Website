@@ -357,3 +357,16 @@ li a:hover{
     }
     
 }
+@media screen  and (max-width:200px){
+    nav ul{
+        position:fixed;
+        width:50%;
+        height:100vh;
+        background: #fff;
+        left:-100%;
+        display: block;
+        text-align: center;
+        transition: all .5s;
+    }
+    
+}
