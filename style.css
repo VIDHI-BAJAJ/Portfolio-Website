@@ -292,3 +292,68 @@ li a:hover{
         animation-name: myimage;
     }
 }
+@media screen and (max-width:350px) {
+    nav ul{
+    position:fixed;
+    width:35%;
+    height:100vh;
+    background: #000;
+    left:-100%;
+    display: block;
+    text-align: center;
+    transition: all .5s;
+}
+.namecontainer{
+    font-size:15px;
+}
+}
+@media screen  and (max-width:421px){
+    .namecontainer{
+        font-size:12px;
+    }    
+}
+@media screen  and (max-width:500px){
+    .aa{
+    width: 75%;
+    height: auto;
+    margin-bottom: 0.5em;
+    padding-right: 1.15rem;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: none;
+    padding-right: 2rem;
+    color: black;
+    font-family: 'Karla', sans-serif;
+    }
+    
+}
+@media screen  and (max-width:400px){
+    .aa{
+    width:65%;
+    height: auto;
+    margin-bottom: 0.5em;
+    padding-right: 1rem;
+    font-size: 10px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-transform: none;
+    padding-right: 1rem;
+    color: black;
+    font-family: 'Karla', sans-serif;
+    }
+    
+}
+@media screen  and (max-width:280px){
+    nav ul{
+        position:fixed;
+        width:45%;
+        height:100vh;
+        background: #000;
+        left:-100%;
+        display: block;
+        text-align: center;
+        transition: all .5s;
+    }
+    
+}
